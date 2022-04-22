@@ -1,1 +1,11 @@
+For the working principle of the LM 35 temperature sensor, we have to understand the linear scale factor. In the features of LM 35, it is given to be +10 mills volt per degree centigrade. It means that with an increase in output of 10 mills volt by the sensor out pin the temperature value increases by one. For example, if the sensor is outputting 100 mills volt at vout pin the temperature in centigrade will be 10-degree centigrade. The same goes for the negative temperature reading. If the sensor is outputting -100 mills volt the temperature will be -10 degrees Celsius.
+
+Digital Thermometer Using Arduino & LM35 Temperature Sensor
+
+The circuit diagram is shown above. Briefly, there are two transistors in the center of the drawing.
+
+
+One has ten times the emitter area of the other. This means it has one-tenth of the current density since the same current is going through both transistors. This causes a voltage across the resistor R1 that is proportional to the absolute temperature and is almost linear across the range we care about. The “almost” part is taken care of by a special circuit that straightens out the slightly curved graph of voltage versus temperature. The amplifier at the top ensures that the voltage at the base of the left transistor (Q1) is proportional to absolute temperature (PTAT) by comparing the output of the two transistors.
+
+The amplifier at the right converts absolute temperature (measured in Kelvin) into either Fahrenheit or Celsius, depending on the part (LM34 or LM35). The little circle with the “i” in it is a constant current source circuit. The two resistors are calibrated in the factory to produce a highly accurate temperature sensor. The integrated circuit has many transistors in it — two in the middle, some in each amplifier, some in the constant current source, and some in the curvature compensation circuit. All of that is fit into the tiny package with three leads
 
