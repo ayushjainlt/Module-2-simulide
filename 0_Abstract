@@ -1,1 +1,11 @@
 
+Digital Thermometer Using Arduino & LM35 Temperature Sensor:
+
+In this project, we interfaced LM35 Temperature Sensor with
+
+ Arduino to design a digital thermometer.
+
+
+The measured temperature will be directly displayed on a 16*2 LCD. LM35DZ is capable of reading the temperature in Centigrade scale. The output voltage of the sensor is directly proportional to the temperature in centigrade. LM35 can be used in the range of -55°C to +150°C with +/- 0.75°C accuracy. So to design a Digital Thermometer Using Arduino & LM35 Temperature Sensor.
+
+There are also other few Sensors like MLX90614 that can measure the temperature without any physical contact.
